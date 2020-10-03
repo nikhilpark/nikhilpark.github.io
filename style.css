@@ -264,8 +264,10 @@ p, li, span, label, input, textarea{
     text-align: center;
 }
 
-#social-img{
-    width: 100%;
+.img-responsive{
+    max-width: 100%;
+    display:block;
+    height: auto;
 }
 .proj-wrapper{
     display: grid;
