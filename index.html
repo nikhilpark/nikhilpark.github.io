@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link id="theme-style" rel="stylesheet">
+
 
 
 
@@ -29,7 +31,7 @@
 
                     <div class="nav-wrapper">
                         <div class="dots-wrapper">
-                            <div id="dot1" class="browser-dot"></div>
+                            <div id="dot1" onclick="" class="browser-dot"></div>
                             <div id="dot2" class="browser-dot"></div>
                             <div id="dot3" class="browser-dot"></div>
 
@@ -42,16 +44,16 @@
                     </div>
 
                     <div class="left-column">
-                            <img id ="ppic" src="ppic2.png">
+                            <img id ="ppic" src="imgs/ppic2.png">
                             <h5 style="text-align: center;line-height: 0">Personalize theme</h5>
                             <div id="theme-options-wrapper">
                                 <div class="theme-dot" id="light-mode"></div>
-                                <div class="theme-dot" id="blue-mode"></div>
+                                <div class="theme-dot" id="bllue-mode"></div>
                                 <div class="theme-dot" id="green-mode"></div>
                                 <div class="theme-dot" id="purple-mode"></div>
                             </div>
 
-                            <p id="settings-note">*Theme settigs will be saved for<br>your next visit</p>
+
 
                     </div>
 
@@ -78,14 +80,102 @@
 
     <section class="s2 ">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+
+                <div class="about-me">
+
+                    <h4>More about me</h4>
+                    <p>I love building new projects just to tickle
+                        my brain</p>
+                    <p>
+                        While i keep building projects, I still am
+                        learning new stuff everyday to keep tickling my
+                        brain even more
+                    </p>
+
+                    <hr>
+                    <h4>TOP EXPERTISE</h4>
+                    <p>Full stack developer with primary focus on
+                        Django and React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Flask</li>
+                            <li>REST-API</li>
+                        </ul>
+
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <img id =#social-img src="imgs/social.jpg ">
+                    <h3>Find me on Instagram & LinkedIN</h3>
+
+                    <a target="_blank" href="https://www.instagram.com/nikhilpark">Instagram: @nikhilpark</a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/nikhilpark">LinkedIn: @nikhilpark</a>
+
+
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
     <section class="s1 ">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center">Some of my projects </h3>
+                <div class="proj-wrapper">
+                    <div>
+                        <div class="project">
+                            <img class="p1" src="imgs/p1.jpg">
+                            <div class="pdesc">
+                                <h6 class="ptitle"> Twitter Clone</h6>
+                                <p class="p-intro">A fully functional twitter clone built with Django</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="project">
+                            <img class="p1" src="imgs/p2.jpg">
+                            <div class="pdesc">
+                                <h6 class="ptitle">WeatherApp</h6>
+                                <p class="p-intro">A web app based on flask that uses the open-weather API
+                                    to find accurate weather forecast based on your location</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="project">
+                            <img class="p1" src="imgs/p1.jpg">
+                            <div class="pdesc">
+                                <h6 class="ptitle"> Twitter Clone</h6>
+                                <p class="p-intro">A fully</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
         </div>
+
     </section>
 
     <section class="s2 ">
@@ -95,6 +185,6 @@
     </section>
 
 
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
