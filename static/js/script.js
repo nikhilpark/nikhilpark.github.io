@@ -25,6 +25,22 @@ for (let i=0; themeDots.length >i;i++){
 
     })
 }
+let btn = document.getElementById('btn');
+btn.disabled = true;
+function check(){
+    let name = document.getElementById("name");
+    let sub = document.getElementById('sub');
+    let email = document.getElementById('Email');
+    let msg = document.getElementById('msg');
+    let btn = document.getElementById('btn');
+    console.log(name.value)
+    btn.disabled = name.value === "" || name.value == null ||
+        sub.value === '' || sub.value == null || email.value === '' ||
+        email.value == null || msg.value === '' || msg.value == null  ;
+
+}
+window.addEventListener("keyup", check);
+
 
 
 
@@ -33,7 +49,6 @@ for (let i=0; themeDots.length >i;i++){
     // get the form elements defined in your form HTML above
 
     let form = document.getElementById("contactform");
-    let button = document.getElementById("btn");
     let status = document.getElementById("my-form-status");
 
     // Success and Error functions for after the form is submitted
@@ -49,12 +64,17 @@ for (let i=0; themeDots.length >i;i++){
 
     // handle the form submission event
 
+
     form.addEventListener("submit", function(ev) {
-    ev.preventDefault();
+        ev.preventDefault();
+
+
     let data = new FormData(form);
     ajax(form.method, form.action, data, success, error);
 });
+
 });
+
 
     // helper function for sending an AJAX request
 
