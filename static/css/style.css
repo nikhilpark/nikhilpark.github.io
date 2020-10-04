@@ -315,6 +315,15 @@ p, li, span, label, input, textarea{
     border: none;
 
 }
+
+#btn:disabled{
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+#btn:hover{
+    color:cyan;
+}
+
 .input-field{
     width: 100%;
     padding-top:10px;
