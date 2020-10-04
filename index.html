@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <link id="theme-style" rel="stylesheet">
 
@@ -38,7 +38,7 @@
                         </div>
 
                         <ul id="navigation">
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contactform">Contact</a></li>
                         </ul>
 
                     </div>
@@ -66,7 +66,7 @@
                                     <h3>What i do</h3>
                                     <p>I am currently doing engineering
                                     in Information Technology
-                                    (// site under construction //)</p>
+                                    </p>
                                     <div id="corner-br" class="corner"></div>
                                     <div id="corner-bl" class="corner"></div>
                                 </div>
@@ -96,7 +96,7 @@
                     <hr>
                     <h4>TOP EXPERTISE</h4>
                     <p>Full stack developer with primary focus on
-                        Django and React: <a target="_blank" href="resume.pdf">Download Resume</a></p>
+                     Django/Flask and working with API's    <a target="_blank" href="static/resume.pdf">Download Resume</a></p>
 
                     <div id="skills">
                         <ul>
@@ -124,8 +124,6 @@
                     <br>
                     <a target="_blank" href="https://www.linkedin.com/in/nikhilpark">LinkedIn: @nikhilpark</a>
 
-
-
                 </div>
 
             </div>
@@ -143,8 +141,9 @@
                             <img class="p1" src="imgs/p1.jpg">
                             <div class="pdesc">
                                 <h6 class="ptitle"> Twitter Clone</h6>
-                                <p class="p-intro">A fully functional twitter clone built with Django</p>
-                                <a href="#">Read More</a>
+                                <p class="p-intro">A fully functional twitter clone built with Django that does
+                                everything original can do</p>
+                                <a href="#">View source code</a>
                             </div>
                         </div>
                     </div>
@@ -156,18 +155,22 @@
                                 <h6 class="ptitle">WeatherApp</h6>
                                 <p class="p-intro">A web app based on flask that uses the open-weather API
                                     to find accurate weather forecast based on your location</p>
-                                <a href="#">Read More</a>
+
+                                <a target="_blank" href="http://weatherinfo.pythonanywhere.com/">Visit Project</a>
+                                <span style="font-weight: bold">/~/</span>
+                                <a target="_blank" href="https://github.com/nikhilpark/WeatherApp">View source code</a>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="project">
-                            <img class="p1" src="imgs/p1.jpg">
+                            <img class="p1" src="imgs/p3.jpg">
                             <div class="pdesc">
-                                <h6 class="ptitle"> Twitter Clone</h6>
-                                <p class="p-intro">A fully</p>
-                                <a href="#">Read More</a>
+                                <h6 class="ptitle"> Lyric Box</h6>
+                                <p class="p-intro">A simple GUI based app that uses API and web scraping to find out lyircs
+                                of any song</p>
+                                <a target="_blank" href="https://github.com/nikhilpark/tkinterApps/tree/master/lyricbox">View source code</a>
                             </div>
                         </div>
                     </div>
@@ -180,11 +183,28 @@
 
     <section class="s2 ">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center">Get In Touch! </h3>
+            <form id="contactform" action="https://formspree.io/f/myybzraj" method="POST">
+                <label for="name">Name</label>
+                <input id="name" name="name" class="input-field" type="text">
+
+                <label for="sub">Subject</label>
+                <input id="sub" name="sub" class="input-field" type="text">
+
+                <label for="Email">Email</label>
+                <input id="Email" name="Email" class="input-field" type="email">
+
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" class="input-fields"></textarea>
+
+                <input type="submit" value="Send" id="btn">
+                <p id="my-form-status"></p>
+
+            </form>
         </div>
     </section>
 
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
 </body>
 </html>
