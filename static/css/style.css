@@ -383,4 +383,20 @@ p, li, span, label, input, textarea{
         grid-template-columns: 1fr;
     }
 
+    #preview-shadow{
+        width: 270px;
+        height: 180px;
+        padding-left: 20px;
+        padding-top: 20px;
+        background-color:var(--previewShadow);
+
+    }
+    #preview {
+        width: 270px;
+        border: 1.5px solid #17a2b8;
+        background-color: var(--previewBG);
+        padding: 10px;
+        position: relative;
+    }
+
 }
