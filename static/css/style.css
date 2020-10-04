@@ -342,6 +342,9 @@ p, li, span, label, input, textarea{
 #contactform textarea{
     min-height: 100px;
     font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid var(--borderColor);
+    background-color: var(--secondaryColor);
     width:100%;
 
 }
