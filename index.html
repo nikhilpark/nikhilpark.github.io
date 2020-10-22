@@ -10,10 +10,9 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="static/css/style.css">
 
-    <link id="theme-style" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="">
 
 
 
@@ -38,7 +37,9 @@
                         </div>
 
                         <ul id="navigation">
-                            <li><a href="#contactform">Contact</a></li>
+                            <li><a href="#anchor3">Skills</a></li>
+                            <li><a href="#anchor2">Projects</a></li>
+                            <li><a href="#anchor1">Contact</a></li>
                         </ul>
 
                     </div>
@@ -47,10 +48,10 @@
                             <img id ="ppic" src="imgs/ppic2.png">
                             <h5 style="text-align: center;line-height: 0">Personalize theme</h5>
                             <div id="theme-options-wrapper">
-                                <div class="theme-dot" id="light-mode"></div>
-                                <div class="theme-dot" id="bllue-mode"></div>
-                                <div class="theme-dot" id="green-mode"></div>
-                                <div class="theme-dot" id="purple-mode"></div>
+                                <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                                <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                                <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                                <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
                             </div>
 
 
@@ -88,13 +89,11 @@
                     <p>I love building new projects just to tickle
                         my brain</p>
                     <p>
-                        While i keep building projects, I still am
-                        learning new stuff everyday to keep tickling my
-                        brain even more
+                       
                     </p>
 
                     <hr>
-                    <h4>TOP EXPERTISE</h4>
+                    <h4 id="anchor3">TOP EXPERTISE</h4>
                     <p>Full stack developer with primary focus on
                      Django/Flask and working with API's    <a target="_blank" href="static/resume.pdf">Download Resume</a></p>
 
@@ -107,10 +106,11 @@
                         </ul>
 
                         <ul>
+                            <li>React</li>
                             <li>HTML/CSS</li>
                             <li>JavaScript</li>
                             <li>SQL</li>
-                            <li></li>
+
                         </ul>
 
                     </div>
@@ -134,7 +134,7 @@
 
     <section class="s1 ">
         <div class="main-container">
-            <h3 style="text-align: center">Some of my projects </h3>
+            <h3 id="anchor2" style="text-align: center">Some of my projects </h3>
                 <div class="proj-wrapper">
                     <div>
                         <div class="project">
@@ -174,8 +174,11 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+
+            <div class="view-more">
+                <button id="btn2" class="btn btn-view-more">View More</button>
+            </div>
 
         </div>
 
@@ -183,7 +186,7 @@
 
     <section class="s2 ">
         <div class="main-container">
-            <h3 style="text-align: center">Get In Touch! </h3>
+            <h3 id ="anchor1" style="text-align: center">Get In Touch! </h3>
             <form id="contactform" action="https://formspree.io/f/myybzraj" method="POST">
                 <label for="name">Name</label>
                 <input id="name" name="name" class="input-field" type="text">
@@ -197,7 +200,7 @@
                 <label for="msg">Message</label>
                 <textarea id="msg" name="msg" class="input-fields"></textarea>
 
-                <input type="submit" value="Send" id="btn">
+                <div> <input type="submit" value="Send" id="btn" class="btn btn-submit"> </div>
                 <p id="my-form-status"></p>
 
             </form>
@@ -205,6 +208,8 @@
     </section>
 
 
-<script type="text/javascript" src="static/js/script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/script.js"></script>
 </body>
 </html>
