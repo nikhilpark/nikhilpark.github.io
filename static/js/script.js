@@ -1,30 +1,40 @@
-let themeDots = document.getElementsByClassName('theme-dot')
 
-for (let i=0; themeDots.length >i;i++){
-    themeDots[i].addEventListener('click',function () {
+let theme = localStorage.getItem('theme')
 
-        let eventlet = themeDots[i];
-        let query = eventlet.outerHTML.slice(27,37);
-        console.log(query)
+if(theme == null){
+    setTheme('light')
+}else{
+    setTheme(theme)
+}
 
-        if (query === "light-mode"){
-            document.getElementById('theme-style').setAttribute("href","static/css/style.css");
-        }
-        else if (query === "bllue-mode"){
-            document.getElementById('theme-style').setAttribute("href","static/css/blue.css");
+    let themeDots = document.getElementsByClassName('theme-dot')
 
-        }
-        else if (query === "purple-mod"){
-            document.getElementById('theme-style').setAttribute("href","static/css/purple.css");
 
-        }
-        else if (query === "green-mode"){
-            document.getElementById('theme-style').setAttribute("href","static/css/green.css");
-
-        }
-
+for (let i=0; themeDots.length > i; i++){
+    themeDots[i].addEventListener('click', function(){
+        let mode = this.dataset.mode
+        console.log('Option clicked:', mode)
+        setTheme(mode)
     })
 }
+
+function setTheme(mode){
+    if(mode === 'light'){
+        $("#theme-style").attr("href","static/css/light.css")    }
+
+    else if(mode === 'blue'){
+        $("#theme-style").attr("href","static/css/blue.css")
+    }
+
+    else if(mode === 'green'){
+        $("#theme-style").attr("href","static/css/green.css")    }
+
+    else if(mode === 'purple'){
+        $("#theme-style").attr("href","static/css/purple.css")    }
+
+    localStorage.setItem('theme', mode)
+}
+
 let btn = document.getElementById('btn');
 btn.disabled = true;
 function check(){
@@ -93,11 +103,9 @@ window.addEventListener("keyup", check);
     xhr.send(data);
 }
 
-
-
-
-
-
+$("#btn2").click(()=>{
+   console.log("hey")
+})
 
 
 
