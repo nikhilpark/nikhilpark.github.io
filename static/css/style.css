@@ -11,7 +11,9 @@
     --btnColor:black;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 html, body {
     padding: 0;
     margin: 0;
@@ -284,7 +286,12 @@ p, li, span, label, input, textarea{
     box-shadow: 8px 10px 21px -4px rgba(0,0,0,0.75)
 
 }
+.project:hover{
+    transform: scale(1.09);
 
+
+}
+a:hover{text-decoration: underline}
 .p1{
     display: block;
     width: 100%;
@@ -305,9 +312,15 @@ p, li, span, label, input, textarea{
     font-size: 14px;
 }
 
-#btn{
+.view-more{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px    ;
+}
+
+
+.btn{
     margin-top: 10px;
-    width: 100%;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #fff;
@@ -316,14 +329,17 @@ p, li, span, label, input, textarea{
 
 }
 
-#btn:disabled{
-    background-color: #cccccc;
+.btn:disabled{
+    background-color: var(--btnColor);
+    opacity:0.3;
     cursor: not-allowed;
 }
-#btn:hover{
-    color:cyan;
+.btn-view-more{
+    width: 10em;
 }
-
+.btn-submit{
+    width: 100%;
+}
 .input-field{
     width: 100%;
     padding-top:10px;
@@ -333,7 +349,9 @@ p, li, span, label, input, textarea{
     border: 1px solid var(--borderColor);
     font-size: 14px;
 }
-
+#msg{
+    resize: none;
+}
 #contactform{
     display: block;
     max-width: 600px;
@@ -356,6 +374,10 @@ p, li, span, label, input, textarea{
     background-color: var(--secondaryColor);
     width:100%;
 
+}
+#contactform div{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1200px){
