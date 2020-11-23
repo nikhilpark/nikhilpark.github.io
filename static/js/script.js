@@ -1,3 +1,9 @@
+$(document).ready(function() {
+    $("#tran").css("display", "none").fadeIn(2000);
+
+})
+
+console.log('Its working')
 
 let theme = localStorage.getItem('theme')
 
@@ -100,11 +106,17 @@ window.addEventListener("keyup", check);
     error(xhr.status, xhr.response, xhr.responseType);
 }
 };
-    xhr.send(data);
+    xhr.send(data);s
 }
 
 $("#btn2").click(()=>{
-   console.log("hey")
+   $("#more-projects").css("display","flex");
+   $("#view-more").css("display","none");
+})
+
+$("#btn3").click(()=>{
+    $("#more-projects").css("display","none");
+    $("#view-more").css("display","flex");
 })
 
 
