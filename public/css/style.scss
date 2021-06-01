@@ -1,0 +1,287 @@
+$darkPrimary:black;
+$darkText:white;
+$prFont: 'Roboto', sans-serif;
+$neongreen:#39FF14;
+
+
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background: $darkPrimary;
+
+    #bg{
+        padding-bottom: 28vh;
+        background: url('../images/bg.svg');
+   
+        background-repeat: no-repeat;
+     
+        background-position:15vw;
+   
+    }
+    #nav-cont{
+        display: flex;
+        margin: 0;
+        color: $darkText;
+        font-family: $prFont;
+        #heading-cont{
+            margin: 2vh 3vw;
+
+            &:hover{
+                cursor:pointer;
+                text-decoration:underline;
+                text-underline-offset: 10px;
+                text-decoration-color: $neongreen;
+            }
+        }
+
+
+        nav{
+            position:fixed;
+            right:2vw;
+ 
+            #navburg img{
+                    height: 30px;
+                    width: 30px;
+                    opacity: (0.8);
+                    padding: 5px;
+                    margin-top: 3vh;
+
+                    &:hover{
+                        opacity:(1);
+                        cursor: pointer;
+                    
+            
+                     
+                    }
+            }
+        }   
+
+
+      
+    }
+
+    #s1{
+    
+  
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: $prFont;
+
+
+       
+
+        #main-card{
+            color: $darkText;
+            margin: 5vh 5vw;
+            width: fit-content;
+            cursor: pointer;
+            #greeting{
+                font-size: 1.2rem;
+            }
+            h1{
+                font-size: 5rem;
+                margin: 0.5rem 0;
+                background: linear-gradient(to right, crimson,pink,rgb(0, 255, 21),rgb(0, 247, 255),rgb(255, 251, 0));
+                background-size: 200% 200%;
+                animation: rainbow 1s ease-in-out infinite;
+                background-clip: text;
+                -webkit-background-clip:text;
+                color:rgb(255, 255, 255);
+                transition: color .2s ease-in-out; 
+                text-transform:uppercase;
+                font-weight:900;
+                
+            }
+            #whatido{
+                color: $neongreen;
+                font-size: 3rem;
+                font-weight:bold;
+            }
+            #description{
+                font-size: 1.2rem;
+                margin-top: 1.5 vh;
+                color:rgb(129, 124, 124);
+            }
+
+            #hire-me-btn{
+               
+                margin-top: 1.5vh;
+                padding: 0.4rem 1.5rem;
+                font-size: 2rem;
+                border-radius: 45px;
+                color: white;
+                background-color: transparent;
+                border: 2px solid $neongreen;
+
+                svg{
+                    filter: invert(100%);
+                }
+
+                
+
+
+                &:hover{
+                    cursor: pointer; 
+                    background-color: $neongreen;
+                    border-color: black;
+                    color: black;
+                    transition:0.5s ease-in-out;
+                }   
+
+                &:hover svg{
+                    filter: invert(0%);
+                
+                }
+            }
+
+            
+            &:hover h1{
+                color:rgba(0,0,0,0);
+            }
+        }
+
+    }
+  #s2{
+
+    margin-top: 0 vh;
+  
+      #pheading{
+          
+        margin:0 5vw;
+        
+
+        h2{
+            font-family: $prFont;
+            padding: 1vh;
+            color: white;
+            margin: 0 2vw;
+            font-weight: lighter;
+        }
+      }
+
+#projects-cont{
+    margin-top: 3vh;
+    margin: 2vh auto;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2vw;
+
+    .proj{
+
+        opacity: (0.9);
+       
+
+        &:nth-of-type(n)
+        {
+        background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        }
+        &:nth-of-type(2n)
+        {
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
+            
+        }
+        &:nth-of-type(3n)
+        {
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );            
+        }
+
+        &:hover{
+            background: black;
+            color: white;
+            border: 0.2px solid white;
+            transition: 0.2s ease-out;
+
+            svg{
+                filter: invert(100%);
+               
+            }
+       
+        }
+
+
+        .proj-head{
+            display: flex;
+            flex-direction: row-reverse;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+
+        .proj-title{
+        
+            h2{
+                font-family: $prFont;
+                font-size: xx-large;
+                font-weight: bolder;
+                margin-left: 8rem;
+                margin-top: 8rem;
+            }
+            p{
+                margin-left: 2rem;
+                font-family: $prFont;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}
+
+  }
+
+#nav-overlay{
+   display: none;
+   position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:#39FF14;
+
+
+    z-index: 2;
+  
+    h1{
+
+   
+    color:black;
+    font-size: x-large;
+    opacity: 1;
+}
+
+}
+
+.display{
+    display: none;
+}
+
+}
+
+@media screen and (max-width:1133px)  {
+
+    body{
+        
+        #bg{
+             background-position: center center;
+       
+        }
+
+    
+
+     
+    }
+}
+
+@media screen and (max-height:441px)  {
+
+  
+}
+
+@keyframes rainbow { 
+    0%{background-position:left}
+    50%{background-position:right}
+    100%{background-position:left}
+  }
+
+
+
+  
