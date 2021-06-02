@@ -13,9 +13,7 @@ body{
     #bg{
         padding-bottom: 28vh;
         background: url('../images/bg.svg');
-   
         background-repeat: no-repeat;
-     
         background-position:15vw;
    
     }
@@ -63,7 +61,6 @@ body{
 
     #s1{
     
-  
         display: grid;
         grid-template-columns: 1fr;
         font-family: $prFont;
@@ -231,22 +228,159 @@ body{
   }
 
 #nav-overlay{
-   display: none;
-   position: fixed;
+   position: fixed; 
     width: 100vw;
-    height: 100vh;
-    background-color:#39FF14;
-
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.5s linear;
+    background-color:#09f755;
+ 
 
     z-index: 2;
   
-    h1{
+   #ol-links{
+        border: 1px solid red;
+        margin-top: 15vh;
+        width: fit-content;
+        height: fit-content;
+        .nheader{
+            font-size: 1.8rem;
+            font-weight:normal;
+
+        }
+    
+        div{
+            margin: 4vh 3vw;
+            font-size: 2rem;
+            font-weight: bold;
+            font-family: $prFont;
+        }
+   }
+
+#overlay-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+ 
+
+    
+
+    img{
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        margin-top: 3vh;
+        border-radius: 30px;
+        background-color: black;
+
+            &:hover{
+         
+            cursor: pointer;
+                
+            
+                     
+                    
+            }
+    }
+
+}
+
+
+h1{
+    font-family: $prFont;
+    letter-spacing: 2px;
+
+
+    &:hover{
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+button{
+    border: 2px solid black;
+    color: black;
+    border-radius: 45px;
+    padding: 1.3vh 4vh;
+    font-size: larger;
+    background-color: transparent;
+
+    &:hover{
+        background-color: black;
+        color: #39FF14;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+    
+#overlay-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 100vh;
+
 
    
-    color:black;
-    font-size: x-large;
-    opacity: 1;
+    
+
+
+    #overlay-g1{
+        margin: 15vh 9vw;
+
+        #g1-1{
+            font-family: $prFont;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            font-weight: bolder;
+
+            &:hover{
+                letter-spacing: 5px;
+                cursor:pointer;
+                transition: 0.4s ease-in-out;
+            }
+        }
+        #social-cont{
+            display: grid;
+            width: fit-content;
+           margin:5vh 2vw;
+           gap: 4vh;
+            grid-template-columns: 1fr 1fr;
+            div{
+                
+                
+
+
+                img{
+                    height: 30px;
+                    padding: 1rem;
+                   
+                }
+                .invert{
+                    filter:brightness(0%)
+                    
+            }
+
+            &:hover{
+                    cursor: pointer;
+                    background-color: black;
+                }
+            &:hover img{
+                filter:  brightness(0) invert(1);
+                transition: 0.4s ease;
+              
+               
+            }
+            
+            }
+        }
+
+    
+
+    }
+ 
 }
+
 
 }
 
@@ -262,7 +396,7 @@ body{
         
         #bg{
              background-position: center center;
-       
+    
         }
 
     
@@ -271,9 +405,9 @@ body{
     }
 }
 
-@media screen and (max-height:441px)  {
+@media screen and (max-width:580px)  {
 
-  
+ 
 }
 
 @keyframes rainbow { 

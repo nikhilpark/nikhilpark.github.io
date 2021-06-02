@@ -219,18 +219,149 @@ body #s2 #projects-cont .proj .proj-title p {
 }
 
 body #nav-overlay {
-  display: none;
   position: fixed;
   width: 100vw;
-  height: 100vh;
-  background-color: #39FF14;
+  max-height: 100vh;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s linear;
+  transition: max-height 0.5s linear;
+  background-color: #09f755;
   z-index: 2;
 }
 
+body #nav-overlay #ol-links {
+  border: 1px solid red;
+  margin-top: 15vh;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+body #nav-overlay #ol-links .nheader {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+body #nav-overlay #ol-links div {
+  margin: 4vh 3vw;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+body #nav-overlay #overlay-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 3vw;
+}
+
+body #nav-overlay #overlay-nav img {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  margin-top: 3vh;
+  border-radius: 30px;
+  background-color: black;
+}
+
+body #nav-overlay #overlay-nav img:hover {
+  cursor: pointer;
+}
+
 body #nav-overlay h1 {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+body #nav-overlay h1:hover {
+  letter-spacing: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body #nav-overlay button {
+  border: 2px solid black;
   color: black;
-  font-size: x-large;
-  opacity: 1;
+  border-radius: 45px;
+  padding: 1.3vh 4vh;
+  font-size: larger;
+  background-color: transparent;
+}
+
+body #nav-overlay button:hover {
+  background-color: black;
+  color: #39FF14;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+body #nav-overlay #overlay-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  height: 100vh;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 {
+  margin: 15vh 9vw;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #g1-1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #g1-1:hover {
+  letter-spacing: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #social-cont {
+  display: -ms-grid;
+  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 5vh 2vw;
+  gap: 4vh;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #social-cont div img {
+  height: 30px;
+  padding: 1rem;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #social-cont div .invert {
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 body .display {
