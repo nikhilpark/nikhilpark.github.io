@@ -230,7 +230,7 @@ body{
 #nav-overlay{
    position: fixed; 
     width: 100vw;
-    max-height: 100vh;
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s linear;
     background-color:#09f755;
@@ -239,7 +239,7 @@ body{
     z-index: 2;
   
    #ol-links{
-        border: 1px solid red;
+    
         margin-top: 15vh;
         width: fit-content;
         height: fit-content;

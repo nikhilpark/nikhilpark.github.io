@@ -221,7 +221,7 @@ body #s2 #projects-cont .proj .proj-title p {
 body #nav-overlay {
   position: fixed;
   width: 100vw;
-  max-height: 100vh;
+  max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.5s linear;
   transition: max-height 0.5s linear;
@@ -230,7 +230,6 @@ body #nav-overlay {
 }
 
 body #nav-overlay #ol-links {
-  border: 1px solid red;
   margin-top: 15vh;
   width: -webkit-fit-content;
   width: -moz-fit-content;
