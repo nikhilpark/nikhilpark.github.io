@@ -159,7 +159,7 @@ body #s2 #projects-cont {
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2vw;
+  gap: 2rem;
 }
 
 body #s2 #projects-cont .proj {
@@ -200,7 +200,7 @@ body #s2 #projects-cont .proj .proj-head {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-right: 1rem;
+  margin-right: 2rem;
   margin-top: 1rem;
 }
 
@@ -230,18 +230,27 @@ body #nav-overlay {
 }
 
 body #nav-overlay #ol-links {
-  margin-top: 15vh;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 10vh 20vw;
 }
 
-body #nav-overlay #ol-links .nheader {
-  font-size: 1.8rem;
-  font-weight: normal;
+body #nav-overlay #ol-links .nheader span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+body #nav-overlay #ol-links .nheader span:hover {
+  cursor: pointer;
+  letter-spacing: 4px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 body #nav-overlay #ol-links div {
@@ -249,6 +258,22 @@ body #nav-overlay #ol-links div {
   font-size: 2rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+}
+
+body #nav-overlay #ol-links div:hover {
+  cursor: pointer;
+  text-underline-offset: 10px;
+}
+
+body #nav-overlay #ol-links .nlink a {
+  text-decoration: none;
+  color: black;
+}
+
+body #nav-overlay #ol-links .nlink a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 10px;
 }
 
 body #nav-overlay #overlay-nav {
@@ -304,10 +329,11 @@ body #nav-overlay button:hover {
 }
 
 body #nav-overlay #overlay-cont {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: 100vh;
 }
 
@@ -370,6 +396,25 @@ body .display {
 @media screen and (max-width: 1133px) {
   body #bg {
     background-position: center center;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  #overlay-g1 {
+    margin: 0 !important;
+    margin-left: 7vw !important;
+  }
+  #social-cont {
+    margin: 0 !important;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  #ol-links {
+    margin-left: 7vw !important;
+    overflow: scroll;
+  }
+  #ol-links div {
+    margin: 0 !important;
   }
 }
 
