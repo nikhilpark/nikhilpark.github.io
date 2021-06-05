@@ -247,8 +247,8 @@ body{
         .nheader{
            span{
             font-family: $prFont;
-            font-size: 1.6rem;
-            letter-spacing: 1px;
+            font-size: 1.55rem;
+            letter-spacing: 2px;
             font-weight: bolder;
             &:hover{
                 cursor: pointer;
@@ -462,8 +462,11 @@ button{
         margin:  0 !important;
         grid-template-columns: 1fr 1fr !important;
     }
+    #overlay-cont{
+        display: flex;
+    }
     #ol-links{
-        margin-left: 20vw !important;
+        margin-left:20vw !important;
     }
 }
 

@@ -241,8 +241,8 @@ body #nav-overlay #ol-links {
 
 body #nav-overlay #ol-links .nheader span {
   font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.55rem;
+  letter-spacing: 2px;
   font-weight: bolder;
 }
 
@@ -425,6 +425,11 @@ body .display {
     margin: 0 !important;
     -ms-grid-columns: 1fr 1fr !important;
         grid-template-columns: 1fr 1fr !important;
+  }
+  #overlay-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #ol-links {
     margin-left: 20vw !important;
