@@ -208,7 +208,7 @@ body #s2 #projects-cont .proj .proj-title h2 {
   font-family: "Roboto", sans-serif;
   font-size: xx-large;
   font-weight: bolder;
-  margin-left: 8rem;
+  margin-left: 6rem;
   margin-top: 8rem;
 }
 
@@ -329,11 +329,6 @@ body #nav-overlay button:hover {
 }
 
 body #nav-overlay #overlay-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   height: 100vh;
 }
 
@@ -411,10 +406,28 @@ body .display {
   }
   #ol-links {
     margin-left: 7vw !important;
-    overflow: scroll;
   }
   #ol-links div {
     margin: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #overlay-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  #social-cont {
+    margin: 0 !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  #ol-links {
+    margin-left: 20vw !important;
   }
 }
 
