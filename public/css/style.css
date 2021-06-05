@@ -423,8 +423,6 @@ body .display {
 @media screen and (max-height: 450px) {
   #social-cont {
     margin: 0 !important;
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
   }
   #overlay-cont {
     display: -webkit-box;
@@ -432,7 +430,7 @@ body .display {
     display: flex;
   }
   #ol-links {
-    margin-left: 20vw !important;
+    margin-left: 10vw !important;
   }
 }
 
