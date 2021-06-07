@@ -1,10 +1,14 @@
 $darkPrimary:black;
 $darkText:white;
 $prFont: 'Roboto', sans-serif;
-$neongreen:#39FF14;
+// $prColor:#f9002c;
+
+$prColor:#39FF14;
+$secColor:#09f755;
+//green 2#09f755
 
 
-body{
+body{ 
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -29,7 +33,7 @@ body{
                 cursor:pointer;
                 text-decoration:underline;
                 text-underline-offset: 10px;
-                text-decoration-color: $neongreen;
+                text-decoration-color: $prColor;
             }
         }
 
@@ -91,7 +95,7 @@ body{
                 
             }
             #whatido{
-                color: $neongreen;
+                color: $prColor;
                 font-size: 3rem;
                 font-weight:bold;
             }
@@ -109,7 +113,7 @@ body{
                 border-radius: 45px;
                 color: white;
                 background-color: transparent;
-                border: 2px solid $neongreen;
+                border: 2px solid $prColor;
 
                 svg{
                     filter: invert(100%);
@@ -120,7 +124,7 @@ body{
 
                 &:hover{
                     cursor: pointer; 
-                    background-color: $neongreen;
+                    background-color: $prColor;
                     border-color: black;
                     color: black;
                     transition:0.5s ease-in-out;
@@ -190,6 +194,9 @@ body{
             border: 0.2px solid white;
             transition: 0.2s ease-out;
 
+            img{
+                filter: invert(100%);
+            }
             svg{
                 filter: invert(100%);
                
@@ -201,8 +208,19 @@ body{
         .proj-head{
             display: flex;
             flex-direction: row-reverse;
-            margin-right: 2rem;
+            margin-right: 1rem;
             margin-top: 1rem;
+            a {
+                
+            img{
+                width: 20px;
+                margin: 5px;
+                &:hover{
+                    transform: scale(1.2);
+                    
+                }
+            }
+            }
         }
 
         .proj-title{
@@ -233,7 +251,7 @@ body{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s linear;
-    background-color:#09f755;
+    background-color:$secColor;
  
 
     z-index: 2;
@@ -280,6 +298,19 @@ body{
                 text-decoration: underline;
                 cursor: pointer;
                 text-underline-offset: 10px;
+                }
+            }
+            ul{
+                list-style: none;
+                display: flex;
+                li{
+                    padding: 10px;
+
+                    &:hover{
+                        background-color: black;
+                        
+                        color: white;
+                    }
                 }
             }
         }

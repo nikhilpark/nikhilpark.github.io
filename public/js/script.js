@@ -3,6 +3,7 @@ const navOverlay = document.querySelector('#nav-overlay')
 const close  = document.querySelector('#overlay-nav')
 const s1 = document.querySelector('#s1')
 const s2 = document.querySelector('#s2')
+const red = document.querySelector('#red')
 
 
 navburg.addEventListener('click',()=>{
@@ -23,6 +24,10 @@ document.querySelectorAll('.nlink').forEach(item => {
         s1.style.display = 'block'
         s2.style.display = 'block'
     })
+})
+
+red.addEventListener('click',()=>{
+    console.log('red')
 })
 
 // $('#navburg').click(()=>{

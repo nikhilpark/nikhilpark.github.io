@@ -187,6 +187,11 @@ body #s2 #projects-cont .proj:hover {
   transition: 0.2s ease-out;
 }
 
+body #s2 #projects-cont .proj:hover img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 body #s2 #projects-cont .proj:hover svg {
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -200,8 +205,18 @@ body #s2 #projects-cont .proj .proj-head {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-top: 1rem;
+}
+
+body #s2 #projects-cont .proj .proj-head a img {
+  width: 20px;
+  margin: 5px;
+}
+
+body #s2 #projects-cont .proj .proj-head a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body #s2 #projects-cont .proj .proj-title h2 {
@@ -274,6 +289,22 @@ body #nav-overlay #ol-links .nlink a:hover {
   text-decoration: underline;
   cursor: pointer;
   text-underline-offset: 10px;
+}
+
+body #nav-overlay #ol-links .nlink ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #nav-overlay #ol-links .nlink ul li {
+  padding: 10px;
+}
+
+body #nav-overlay #ol-links .nlink ul li:hover {
+  background-color: black;
+  color: white;
 }
 
 body #nav-overlay #overlay-nav {
