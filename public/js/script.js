@@ -1,39 +1,43 @@
-const navburg = document.querySelector("#navburg")
-const navOverlay = document.querySelector('#nav-overlay')
-const close  = document.querySelector('#overlay-nav')
-const s1 = document.querySelector('#s1')
-const s2 = document.querySelector('#s2')
-const red = document.querySelector('#red')
+const navburg = document.querySelector("#navburg");
+const navOverlay = document.querySelector("#nav-overlay");
+const close = document.querySelector("#overlay-nav");
+const projects = document.querySelector("#projects-cont");
+const s1 = document.querySelector("#s1");
+const s2 = document.querySelector("#s2");
+const red = document.querySelector("#red");
 
+navburg.addEventListener("click", () => {
+  navOverlay.style.maxHeight = "200vh";
+  s1.style.display = "none";
+  s2.style.display = "none";
+});
 
-navburg.addEventListener('click',()=>{
-    navOverlay.style.maxHeight='200vh'
-    s1.style.display = 'none'
-    s2.style.display = 'none'
-})
+close.addEventListener("click", () => {
+  navOverlay.style.maxHeight = "0";
+  s1.style.display = "block";
+  s2.style.display = "block";
+});
 
-close.addEventListener('click',()=>{
-    navOverlay.style.maxHeight="0"
-    s1.style.display = 'block'
-    s2.style.display = 'block'
-})
+document.querySelectorAll(".nlink").forEach((item) => {
+  item.addEventListener("click", () => {
+    navOverlay.style.maxHeight = "0";
+    s1.style.display = "block";
+    s2.style.display = "block";
+  });
+});
 
-document.querySelectorAll('.nlink').forEach(item => {
-    item.addEventListener('click',()=>{
-        navOverlay.style.maxHeight="0"
-        s1.style.display = 'block'
-        s2.style.display = 'block'
-    })
-})
+let currentPos = window.pageYOffset;
 
-red.addEventListener('click',()=>{
-    console.log('red')
-})
+const update = () => {
+  const newPos = window.pageYOffset;
+  const diff = newPos - currentPos;
+  const speed = diff * 0.66;
 
-// $('#navburg').click(()=>{
-//     $('#nav-overlay').attr('style','display:block')
-// })
+  projects.style.transform = `skewY(${speed}deg)`;
 
-// $('#close').click(()=>{
-//     $('nav-overlay').attr('color','red')
-// })
+  currentPos = newPos;
+
+  requestAnimationFrame(update);
+};
+
+update();

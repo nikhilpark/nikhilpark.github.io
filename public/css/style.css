@@ -30,8 +30,8 @@ body #nav-cont #heading-cont:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 10px;
-  -webkit-text-decoration-color: #39FF14;
-          text-decoration-color: #39FF14;
+  -webkit-text-decoration-color: #39ff14;
+          text-decoration-color: #39ff14;
 }
 
 body #nav-cont nav {
@@ -84,14 +84,14 @@ body #s1 #main-card h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: white;
-  -webkit-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
   text-transform: uppercase;
   font-weight: 900;
 }
 
 body #s1 #main-card #whatido {
-  color: #39FF14;
+  color: #39ff14;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -109,7 +109,7 @@ body #s1 #main-card #hire-me-btn {
   border-radius: 45px;
   color: white;
   background-color: transparent;
-  border: 2px solid #39FF14;
+  border: 2px solid #39ff14;
 }
 
 body #s1 #main-card #hire-me-btn svg {
@@ -119,7 +119,7 @@ body #s1 #main-card #hire-me-btn svg {
 
 body #s1 #main-card #hire-me-btn:hover {
   cursor: pointer;
-  background-color: #39FF14;
+  background-color: #39ff14;
   border-color: black;
   color: black;
   -webkit-transition: 0.5s ease-in-out;
@@ -159,6 +159,11 @@ body #s2 #projects-cont {
   display: grid;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  will-change: transform;
   gap: 2rem;
 }
 
@@ -354,7 +359,7 @@ body #nav-overlay button {
 
 body #nav-overlay button:hover {
   background-color: black;
-  color: #39FF14;
+  color: #39ff14;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   cursor: pointer;
