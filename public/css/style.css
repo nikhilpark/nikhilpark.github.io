@@ -136,7 +136,7 @@ body #s1 #main-card:hover h1 {
 }
 
 body #s2 {
-  margin-top: 0 vh;
+  margin-top: 0vh;
 }
 
 body #s2 #pheading {
@@ -225,6 +225,7 @@ body #s2 #projects-cont .proj .proj-title h2 {
   font-weight: bolder;
   margin-left: 6rem;
   margin-top: 8rem;
+  padding-right: 1vw;
 }
 
 body #s2 #projects-cont .proj .proj-title p {
@@ -448,6 +449,33 @@ body .display {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #bg {
+    padding: 0 !important;
+  }
+  #projects-cont {
+    width: 90vw !important;
+    -ms-grid-columns: 250px !important;
+        grid-template-columns: 250px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin: 2vh 2vh 2vh 2vh !important;
+  }
+  #projects-cont .proj {
+    height: 200px;
+  }
+  #projects-cont .proj .proj-head {
+    margin: 0 !important;
+  }
+  #projects-cont .proj .proj-title h2 {
+    margin: 70px 0 0 2rem !important;
+  }
+  #projects-cont .proj .proj-title p {
+    display: none;
   }
 }
 

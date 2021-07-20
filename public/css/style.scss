@@ -145,7 +145,7 @@ body{
     }
   #s2{
 
-    margin-top: 0 vh;
+    margin-top: 0vh;
   
       #pheading{
           
@@ -224,13 +224,15 @@ body{
         }
 
         .proj-title{
-        
             h2{
                 font-family: $prFont;
                 font-size: xx-large;
                 font-weight: bolder;
                 margin-left: 6rem;
                 margin-top: 8rem;
+                padding-right: 1vw;
+
+              
             }
             p{
                 margin-left: 2rem;
@@ -464,6 +466,8 @@ button{
 
 @media screen and (max-width:999px)  {
 
+
+
     #overlay-g1{
         margin: 0 !important;
         margin-left: 7vw !important;
@@ -485,10 +489,41 @@ button{
 @media screen  and (min-width:1000px) {
     #overlay-cont{
         display:flex;
-    }
+    } 
     
 }
+
+@media screen and (max-width:450px){
+    #bg{
+        padding:0 !important;
+    }
+    #projects-cont{
+        width:90vw !important;
+        grid-template-columns:250px !important;
+        justify-content: center !important;
+        margin: 2vh 2vh 2vh 2vh !important ;
+        .proj{
+          
+            height:200px;
+            .proj-head{
+                margin:0 !important;
+            }
+            .proj-title{
+                h2{
+                margin: 70px 0 0 2rem !important;
+                }
+                p{
+                    display:none;
+                }
+            }
+
+
+        }
+        
+    }
+}
 @media screen and (max-height:450px){
+ 
     #social-cont{
         margin:  0 !important;
       

@@ -1,252 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#09f755" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#09f755" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
     <title>Portfolio</title>
-</head>
-<body> 
-
+  </head>
+  <body>
     <section id="nav-overlay">
-        <div id="overlay-nav">
-            <img src="./public/images/nav.png" alt="burger">
-        </div>
-        
-        <div id="overlay-cont">
+      <div id="overlay-nav">
+        <img src="./public/images/nav.png" alt="burger" />
+      </div>
 
-            <div id="overlay-g1">  
-                <div id="g1-1">
-                    <span>// On the web</span>
-                </div>
-                <div id="social-cont">
-                    <div onclick = 'window.open("http://www.instgaram.com/nikhilpark","blank")'><img class="invert" src="/public/images/insta.svg" alt="i"></div>
-                    <div onclick = 'window.open("http://www.linkedin.com/in/nikhilpark","blank")'><img class="invert" src="/public/images/linkedin.svg" alt="i"></div>
-                    <div onclick = 'window.open("http://www.github.com/nikhilpark","blank")'><img src="/public/images/github.svg" alt="i"></div>
-                    <div onclick = 'window.open("http://www.twitter.com/nikhilpark","blank")'><img class="invert" src="/public/images/twitter.svg" alt="i"></div>
-                </div>
-                <div>
-                    <h1>// RESUME</h1> 
-                    <button onclick= 'window.open("/public/resume.pdf")'>Download</button>
-                </div>
-
-            </div> 
-
-
-
-            <div id="ol-links">
-
-                <div class="nheader">
-                    <span>// Navigation </span>
-                </div>
-
-                <div class="nlink">
-                    <a href="#s1">HOME</a>
-                </div>
-
-                <div class="nlink">
-                    <a href="#s2">Projects</a>
-                </div>
-
-                <!-- <div class="nlink">
-                    Change Theme
-                 
-                        <ul class="theme-options">
-                        <li>G</li>
-                        <li id="red">R</li>
-                        <li>Y</li>
-                        <li>L</li>
-                        <li>D</li>
-                        </ul>
-                   
-                </div> -->
-
+      <div id="overlay-cont">
+        <div id="overlay-g1">
+          <div id="g1-1">
+            <span>// On the web</span>
+          </div>
+          <div id="social-cont">
+            <div
+              onclick='window.open("http://www.instgaram.com/nikhilpark","blank")'
+            >
+              <img class="invert" src="/public/images/insta.svg" alt="i" />
             </div>
-            
-        
-
+            <div
+              onclick='window.open("http://www.linkedin.com/in/nikhilpark","blank")'
+            >
+              <img class="invert" src="/public/images/linkedin.svg" alt="i" />
+            </div>
+            <div
+              onclick='window.open("http://www.github.com/nikhilpark","blank")'
+            >
+              <img src="/public/images/github.svg" alt="i" />
+            </div>
+            <div
+              onclick='window.open("http://www.twitter.com/nikhilpark","blank")'
+            >
+              <img class="invert" src="/public/images/twitter.svg" alt="i" />
+            </div>
+          </div>
+          <div>
+            <h1>// RESUME</h1>
+            <button onclick='window.open("/public/resume.pdf")'>
+              Download
+            </button>
+          </div>
         </div>
-        
- 
+
+        <div id="ol-links">
+          <div class="nheader">
+            <span>// Navigation </span>
+          </div>
+
+          <div class="nlink">
+            <a href="#s1">HOME</a>
+          </div>
+
+          <div class="nlink">
+            <a href="#s2">Projects</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div id="bg">
-        <div id="nav-cont">
-          <div id="heading-cont"><h2>Nikhil</h2></div>
-          <nav>
-              <div id="navburg"><img src="./public/images/nav.png" alt="burger"></div>
-          </nav>
+      <div id="nav-cont">
+        <div id="heading-cont"><h2>Nikhil</h2></div>
+        <nav>
+          <div id="navburg">
+            <img src="./public/images/nav.png" alt="burger" />
+          </div>
+        </nav>
+      </div>
+
+      <section id="s1">
+        <div id="main-card">
+          <span id="greeting">HI THERE 👋 I'M</span>
+          <h1>Nikhil .</h1>
+          <span id="whatido"> Designer. Developer </span>
+          <div id="description">I'm a full stack developer based in India</div>
+          <button
+            onclick="location.href='https://github.com/nikhilpark'"
+            id="hire-me-btn"
+          >
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            Github
+          </button>
         </div>
-
-
-
-
-
-
-  <section id="s1">
-    <div id="main-card">
-        <span id="greeting">HI THERE 👋 I'M</span>
-        <h1>Nikhil .</h1>
-        <span id="whatido">
-            Designer. Developer
-        </span>
-        <div id="description">
-            I'm a full stack developer based in India
-        </div>
-        <button onclick="location.href='https://github.com/nikhilpark'" id="hire-me-btn">  
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg> 
-        Github
-    </button>
+      </section>
     </div>
+    <section id="s2">
+      <div id="pheading">
+        <h2>Projects I've worked on -</h2>
+      </div>
 
-    <div id="me">
-        <!-- <h2>Skills:</h2>
-        <div id="skills-cont">
-        <ul> 
-            <li>NodeJS</li>
-            <li>React</li>
-            <li>Express</li>
-            <li></li>
-        </ul> -->
-        </div>
-    </div>
-
-  </section>
-</div>
-  <section id="s2">
-    <div id="pheading">
-        <h2>
-            Projects I've worked on -
-        </h2>
-    </div> 
-
-    <div id="projects-cont">
-
+      <div id="projects-cont">
         <div class="proj">
-            <div class="proj-head">  
-                <a href="https://github.com/nikhilpark/Rest-Blog" target="blank">
-                    <img src="public/images/github.svg">
-                </a>
-                <a href="http://rest-blog00.herokuapp.com" target="blank">
-                <img src="public/images/external-link.svg">
-                </a>
+          <div class="proj-head">
+            <a href="https://github.com/nikhilpark/Rest-Blog" target="blank">
+              <img src="public/images/github.svg" />
+            </a>
+            <a href="http://rest-blog00.herokuapp.com" target="blank">
+              <img src="public/images/external-link.svg" />
+            </a>
+          </div>
 
-           
-
-            </div>
-
-     <div class="proj-title">
-        <h2>REST Blog</h2>
-        <p>
-             EXPRESS / EJS / MONGODB /<br> BOOTSTRAP
+          <div class="proj-title">
+            <h2>REST Blog</a></h2>
+            <p>
+              EXPRESS / EJS / MONGODB /<br />
+              BOOTSTRAP
             </p>
-    </div>
+          </div>
         </div>
 
-       
-      
         <div class="proj">
-            <div class="proj-head"> 
-                <a href="https://github.com/nikhilpark/chat-app" target="blank">
-                    <img src="public/images/github.svg">
+          <div class="proj-head">
+            <a href="https://github.com/nikhilpark/chat-app" target="blank">
+              <img src="public/images/github.svg" />
             </a>
             <a href="http://chat-frontend00.herokuapp.com" target="blank">
-                <img src="public/images/external-link.svg">
-                </a>
-
-
-            </div>
-
-     <div class="proj-title">
-        <h2>Chat App</h2>
-        <p>
-             EXPRESS / REACT / SOCKET-IO / BOOTSTRAP
-            </p>
-    </div>
-        </div>
-
-         
-        <div  class="proj">
-            <div class="proj-head"> 
-                <a href="https://github.com/nikhilpark/ShoppingAppClient" target="blank">
-                    <img src="public/images/github.svg">                
-                 </a>
-                 <a href="https://web-store00.herokuapp.com/home" target="blank">
-                    <img src="public/images/external-link.svg">
-                    </a>
-    
-
-            </div>
-
-     <div class="proj-title">
-        <h2>Web Store</h2>
-        <p>
-             EXPRESS / REACT / MONGODB /<br> SASS
-            </p>
-    </div>
-        </div>
-
-
-
-
-      
-        <div class="proj">
-            <div class="proj-head"> 
-                <a href="https://github.com/nikhilpark/react-weather">
-                    <img src="public/images/github.svg">
+              <img src="public/images/external-link.svg" />
             </a>
-            <a href="https://nikhilpark.github.io/WebDBootcamp/Assignments/weatherapp/index.html">
-                <img src="public/images/external-link.svg">
-                </a>
+          </div>
 
-
-            </div>
-
-     <div class="proj-title">
-        <h2>Weather App</h2>
-        <p>
-             HTML / CSS / Vanilla JS 
-            </p>
-    </div>
+          <div class="proj-title">
+            <h2>Chat App</h2>
+            <p>EXPRESS / REACT / SOCKET-IO / BOOTSTRAP</p>
+          </div>
         </div>
 
-
-        
         <div class="proj">
-            <div class="proj-head"> 
-                <a href="https://github.com/nikhilpark/lyric-app">
-                <img src="public/images/github.svg">
+          <div class="proj-head">
+            <a
+              href="https://github.com/nikhilpark/ShoppingAppClient"
+              target="blank"
+            >
+              <img src="public/images/github.svg" />
+            </a>
+            <a href="https://web-store00.herokuapp.com/home" target="blank">
+              <img src="public/images/external-link.svg" />
+            </a>
+          </div>
+
+          <div class="proj-title">
+            <h2>Web Store</h2>
+            <p>
+              EXPRESS / REACT / MONGODB /<br />
+              SASS
+            </p>
+          </div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <a href="https://github.com/nikhilpark/node-url-shortener">
+              <img src="public/images/github.svg" />
+            </a>
+            <a
+              href="https://node-urlshortener.herokuapp.com/"
+            >
+              <img src="public/images/external-link.svg" />
+            </a>
+          </div>
+
+          <div class="proj-title">
+            <h2>Url  Shortener</h2>
+            <p>EXPRESS / EJS / MONGODB</p>
+          </div>
+        </div>
+
+        <div class="proj">
+            <div class="proj-head">
+              <a href="https://github.com/nikhilpark/popular-movies">
+                <img src="public/images/github.svg" />
+              </a>
+              <a
+                href="https://nikhilpark.github.io/popular-movies/#/"
+              >
+                <img src="public/images/external-link.svg" />
+              </a>
+            </div>
+  
+            <div class="proj-title">
+              <h2>Popular Movies</h2>
+              <p>REACT / REDUX SAGA / <br/> SCSS / TMDb API </p>
+            </div>
+          </div>
+
+        <div class="proj">
+            <div class="proj-head">
+              <a href="https://github.com/nikhilpark/react-weather">
+                <img src="public/images/github.svg" />
+              </a>
+              <a
+                href="https://nikhilpark.github.io/WebDBootcamp/Assignments/weatherapp/index.html"
+              >
+                <img src="public/images/external-link.svg" />
+              </a>
+            </div>
+  
+            <div class="proj-title">
+              <h2>Weather App</h2>
+              <p>HTML / CSS / Vanilla JS</p>
+            </div>
+          </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <a href="https://github.com/nikhilpark/lyric-app">
+              <img src="public/images/github.svg" />
             </a>
             <!-- <a href="http://rest-blog00.herokuapp.com">
                 <img src="public/images/external-link.svg">
                 </a> -->
+          </div>
 
-
-            </div>
-
-     <div class="proj-title">
-        <h2>Lyric App</h2>
-        <p>
-             REACT NATIVE / last-FM API
-            </p>
-    </div>
+          <div class="proj-title">
+            <h2>Lyric App</h2>
+            <p>REACT NATIVE / last-FM API</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <section id="s3"></section>
 
-<section id="s3">
-
-</section>
-
-
-<script src="public/js/script.js"></script>
-
-</body>
+    <script src="public/js/script.js"></script>
+  </body>
 </html>
