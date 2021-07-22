@@ -1,4 +1,10 @@
-body {
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+html body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -6,14 +12,14 @@ body {
   background: black;
 }
 
-body #bg {
+html body #bg {
   padding-bottom: 28vh;
   background: url("../images/bg.svg");
   background-repeat: no-repeat;
   background-position: 15vw;
 }
 
-body #nav-cont {
+html body #nav-cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,11 +28,15 @@ body #nav-cont {
   font-family: "Roboto", sans-serif;
 }
 
-body #nav-cont #heading-cont {
-  margin: 2vh 3vw;
+html body #nav-cont #heading-cont {
+  margin: 4vh 3vw;
 }
 
-body #nav-cont #heading-cont:hover {
+html body #nav-cont #heading-cont h2 {
+  margin: 0;
+}
+
+html body #nav-cont #heading-cont:hover {
   cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 10px;
@@ -34,12 +44,36 @@ body #nav-cont #heading-cont:hover {
           text-decoration-color: #39ff14;
 }
 
-body #nav-cont nav {
+html body #nav-cont .navLink {
+  margin: 4vh;
+  border: 1px solid #39ff14;
+  padding: 0.4rem 1.5rem;
+  border-radius: 4px;
+}
+
+html body #nav-cont .navLink:hover {
+  background: #39ff14;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+html body #nav-cont .navLink:hover a {
+  color: black;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+html body #nav-cont .navLink a {
+  text-decoration: none;
+  color: white;
+}
+
+html body #nav-cont nav {
   position: fixed;
   right: 2vw;
 }
 
-body #nav-cont nav #navburg img {
+html body #nav-cont nav #navburg img {
   height: 30px;
   width: 30px;
   opacity: 0.8;
@@ -47,12 +81,24 @@ body #nav-cont nav #navburg img {
   margin-top: 3vh;
 }
 
-body #nav-cont nav #navburg img:hover {
+html body #nav-cont nav #navburg img:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-body #s1 {
+html body .sheading {
+  margin: 0 5vw;
+}
+
+html body .sheading h2 {
+  font-family: "Roboto", sans-serif;
+  padding: 1vh;
+  color: white;
+  margin: 0 2vw;
+  font-weight: lighter;
+}
+
+html body #s1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -60,7 +106,7 @@ body #s1 {
   font-family: "Roboto", sans-serif;
 }
 
-body #s1 #main-card {
+html body #s1 #main-card {
   color: white;
   margin: 5vh 5vw;
   width: -webkit-fit-content;
@@ -69,11 +115,11 @@ body #s1 #main-card {
   cursor: pointer;
 }
 
-body #s1 #main-card #greeting {
+html body #s1 #main-card #greeting {
   font-size: 1.2rem;
 }
 
-body #s1 #main-card h1 {
+html body #s1 #main-card h1 {
   font-size: 5rem;
   margin: 0.5rem 0;
   background: -webkit-gradient(linear, left top, right top, from(crimson), color-stop(pink), color-stop(#00ff15), color-stop(#00f7ff), to(#fffb00));
@@ -90,19 +136,19 @@ body #s1 #main-card h1 {
   font-weight: 900;
 }
 
-body #s1 #main-card #whatido {
+html body #s1 #main-card #whatido {
   color: #39ff14;
   font-size: 3rem;
   font-weight: bold;
 }
 
-body #s1 #main-card #description {
+html body #s1 #main-card #description {
   font-size: 1.2rem;
   margin-top: 1.5 vh;
   color: #817c7c;
 }
 
-body #s1 #main-card #hire-me-btn {
+html body #s1 #main-card #hire-me-btn {
   margin-top: 1.5vh;
   padding: 0.4rem 1.5rem;
   font-size: 2rem;
@@ -112,12 +158,12 @@ body #s1 #main-card #hire-me-btn {
   border: 2px solid #39ff14;
 }
 
-body #s1 #main-card #hire-me-btn svg {
+html body #s1 #main-card #hire-me-btn svg {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
-body #s1 #main-card #hire-me-btn:hover {
+html body #s1 #main-card #hire-me-btn:hover {
   cursor: pointer;
   background-color: #39ff14;
   border-color: black;
@@ -126,32 +172,84 @@ body #s1 #main-card #hire-me-btn:hover {
   transition: 0.5s ease-in-out;
 }
 
-body #s1 #main-card #hire-me-btn:hover svg {
+html body #s1 #main-card #hire-me-btn:hover svg {
   -webkit-filter: invert(0%);
           filter: invert(0%);
 }
 
-body #s1 #main-card:hover h1 {
+html body #s1 #main-card:hover h1 {
   color: rgba(0, 0, 0, 0);
 }
 
-body #s2 {
+html body .img-invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+html body #s2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+html body #s2 #skills-cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+html body #s2 #skills-cont h3, html body #s2 #skills-cont h4 {
+  padding: 1vh;
+  color: white;
+  font-weight: lighter;
+  margin: 0 2vw;
+}
+
+html body #s2 .skill-group li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  margin: 10px 2vw;
+  list-style: none;
+  height: 35px;
+  border-bottom: 1px solid #39ff14;
+  border-left: 1px solid #39ff14;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+}
+
+html body #s2 .skill-group li:hover {
+  border-color: #f9002c;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+}
+
+html body #s2 .skill-group li h4 {
+  font-size: 1rem !important;
+}
+
+html body #s2 .skill-group li img {
+  width: 35px;
+  margin-right: 8px;
+}
+
+html body #s2 .skill-group ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+html body #s3 {
   margin-top: 0vh;
 }
 
-body #s2 #pheading {
-  margin: 0 5vw;
-}
-
-body #s2 #pheading h2 {
-  font-family: "Roboto", sans-serif;
-  padding: 1vh;
-  color: white;
-  margin: 0 2vw;
-  font-weight: lighter;
-}
-
-body #s2 #projects-cont {
+html body #s3 #projects-cont {
   margin-top: 3vh;
   margin: 2vh auto;
   width: 70vw;
@@ -167,24 +265,24 @@ body #s2 #projects-cont {
   gap: 2rem;
 }
 
-body #s2 #projects-cont .proj {
+html body #s3 #projects-cont .proj {
   opacity: 0.9;
 }
 
-body #s2 #projects-cont .proj:nth-of-type(n) {
+html body #s3 #projects-cont .proj:nth-of-type(n) {
   background: -webkit-gradient(linear, left top, right top, from(#eeaeca), to(#94bbe9));
   background: linear-gradient(90deg, #eeaeca 0%, #94bbe9 100%);
 }
 
-body #s2 #projects-cont .proj:nth-of-type(2n) {
+html body #s3 #projects-cont .proj:nth-of-type(2n) {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #ffe5a8 0%, #fbaede 100.7%);
 }
 
-body #s2 #projects-cont .proj:nth-of-type(3n) {
+html body #s3 #projects-cont .proj:nth-of-type(3n) {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #ffe5a8 0%, #fbaede 100.7%);
 }
 
-body #s2 #projects-cont .proj:hover {
+html body #s3 #projects-cont .proj:hover {
   background: black;
   color: white;
   border: 0.2px solid white;
@@ -192,17 +290,17 @@ body #s2 #projects-cont .proj:hover {
   transition: 0.2s ease-out;
 }
 
-body #s2 #projects-cont .proj:hover img {
+html body #s3 #projects-cont .proj:hover img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
-body #s2 #projects-cont .proj:hover svg {
+html body #s3 #projects-cont .proj:hover svg {
   -webkit-filter: invert(100%);
           filter: invert(100%);
 }
 
-body #s2 #projects-cont .proj .proj-head {
+html body #s3 #projects-cont .proj .proj-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,17 +312,17 @@ body #s2 #projects-cont .proj .proj-head {
   margin-top: 1rem;
 }
 
-body #s2 #projects-cont .proj .proj-head a img {
+html body #s3 #projects-cont .proj .proj-head a img {
   width: 20px;
   margin: 5px;
 }
 
-body #s2 #projects-cont .proj .proj-head a img:hover {
+html body #s3 #projects-cont .proj .proj-head a img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-body #s2 #projects-cont .proj .proj-title h2 {
+html body #s3 #projects-cont .proj .proj-title h2 {
   font-family: "Roboto", sans-serif;
   font-size: xx-large;
   font-weight: bolder;
@@ -233,13 +331,13 @@ body #s2 #projects-cont .proj .proj-title h2 {
   padding-right: 1vw;
 }
 
-body #s2 #projects-cont .proj .proj-title p {
+html body #s3 #projects-cont .proj .proj-title p {
   margin-left: 2rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
-body #nav-overlay {
+html body #nav-overlay {
   position: fixed;
   width: 100vw;
   max-height: 0;
@@ -250,7 +348,7 @@ body #nav-overlay {
   z-index: 2;
 }
 
-body #nav-overlay #ol-links {
+html body #nav-overlay #ol-links {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -260,60 +358,60 @@ body #nav-overlay #ol-links {
   margin: 10vh 20vw;
 }
 
-body #nav-overlay #ol-links .nheader span {
+html body #nav-overlay #ol-links .nheader span {
   font-family: "Roboto", sans-serif;
   font-size: 1.55rem;
   letter-spacing: 2px;
   font-weight: bolder;
 }
 
-body #nav-overlay #ol-links .nheader span:hover {
+html body #nav-overlay #ol-links .nheader span:hover {
   cursor: pointer;
   letter-spacing: 4px;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-body #nav-overlay #ol-links div {
+html body #nav-overlay #ol-links div {
   margin: 4vh 3vw;
   font-size: 2rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
 
-body #nav-overlay #ol-links div:hover {
+html body #nav-overlay #ol-links div:hover {
   cursor: pointer;
   text-underline-offset: 10px;
 }
 
-body #nav-overlay #ol-links .nlink a {
+html body #nav-overlay #ol-links .nlink a {
   text-decoration: none;
   color: black;
 }
 
-body #nav-overlay #ol-links .nlink a:hover {
+html body #nav-overlay #ol-links .nlink a:hover {
   text-decoration: underline;
   cursor: pointer;
   text-underline-offset: 10px;
 }
 
-body #nav-overlay #ol-links .nlink ul {
+html body #nav-overlay #ol-links .nlink ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body #nav-overlay #ol-links .nlink ul li {
+html body #nav-overlay #ol-links .nlink ul li {
   padding: 10px;
 }
 
-body #nav-overlay #ol-links .nlink ul li:hover {
+html body #nav-overlay #ol-links .nlink ul li:hover {
   background-color: black;
   color: white;
 }
 
-body #nav-overlay #overlay-nav {
+html body #nav-overlay #overlay-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +421,7 @@ body #nav-overlay #overlay-nav {
   margin-right: 3vw;
 }
 
-body #nav-overlay #overlay-nav img {
+html body #nav-overlay #overlay-nav img {
   height: 30px;
   width: 30px;
   padding: 5px;
@@ -332,23 +430,23 @@ body #nav-overlay #overlay-nav img {
   background-color: black;
 }
 
-body #nav-overlay #overlay-nav img:hover {
+html body #nav-overlay #overlay-nav img:hover {
   cursor: pointer;
 }
 
-body #nav-overlay h1 {
+html body #nav-overlay h1 {
   font-family: "Roboto", sans-serif;
   letter-spacing: 2px;
 }
 
-body #nav-overlay h1:hover {
+html body #nav-overlay h1:hover {
   letter-spacing: 5px;
   cursor: pointer;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-body #nav-overlay button {
+html body #nav-overlay button {
   border: 2px solid black;
   color: black;
   border-radius: 45px;
@@ -357,7 +455,7 @@ body #nav-overlay button {
   background-color: transparent;
 }
 
-body #nav-overlay button:hover {
+html body #nav-overlay button:hover {
   background-color: black;
   color: #39ff14;
   -webkit-transition: 0.5s ease-in-out;
@@ -365,29 +463,29 @@ body #nav-overlay button:hover {
   cursor: pointer;
 }
 
-body #nav-overlay #overlay-cont {
+html body #nav-overlay #overlay-cont {
   height: 100vh;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 {
+html body #nav-overlay #overlay-cont #overlay-g1 {
   margin: 15vh 9vw;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #g1-1 {
+html body #nav-overlay #overlay-cont #overlay-g1 #g1-1 {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: bolder;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #g1-1:hover {
+html body #nav-overlay #overlay-cont #overlay-g1 #g1-1:hover {
   letter-spacing: 5px;
   cursor: pointer;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #social-cont {
+html body #nav-overlay #overlay-cont #overlay-g1 #social-cont {
   display: -ms-grid;
   display: grid;
   width: -webkit-fit-content;
@@ -399,29 +497,29 @@ body #nav-overlay #overlay-cont #overlay-g1 #social-cont {
       grid-template-columns: 1fr 1fr;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #social-cont div img {
+html body #nav-overlay #overlay-cont #overlay-g1 #social-cont div img {
   height: 30px;
   padding: 1rem;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #social-cont div .invert {
+html body #nav-overlay #overlay-cont #overlay-g1 #social-cont div .invert {
   -webkit-filter: brightness(0%);
           filter: brightness(0%);
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover {
+html body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover {
   cursor: pointer;
   background-color: black;
 }
 
-body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover img {
+html body #nav-overlay #overlay-cont #overlay-g1 #social-cont div:hover img {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 
-body .display {
+html body .display {
   display: none;
 }
 
