@@ -91,6 +91,16 @@ html {
         margin: 0 2vw;
         font-weight: lighter;
       }
+      #skillsarrow{
+        font-size: 1.2rem;
+        margin-left: 2rem;
+        display: inline-block;
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.2);
+        }
+       
+      }
     }
 
     #s1 {
@@ -311,12 +321,11 @@ html {
 
     #nav-overlay {
       position: fixed;
-      width: 100vw;
+      width: 100%;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.5s linear;
       background-color: $secColor;
-
       z-index: 2;
 
       #ol-links {
