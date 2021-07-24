@@ -98,18 +98,6 @@ html body .sheading h2 {
   font-weight: lighter;
 }
 
-html body .sheading #skillsarrow {
-  font-size: 1.2rem;
-  margin-left: 2rem;
-  display: inline-block;
-}
-
-html body .sheading #skillsarrow:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 html body #s1 {
   display: -ms-grid;
   display: grid;
@@ -236,8 +224,8 @@ html body #s2 .skill-group li {
 
 html body #s2 .skill-group li:hover {
   border-color: #f9002c;
-  -webkit-transition: 0.4s ease-in;
-  transition: 0.4s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   cursor: pointer;
 }
 
@@ -279,6 +267,7 @@ html body #s3 #projects-cont {
 
 html body #s3 #projects-cont .proj {
   opacity: 0.9;
+  border-radius: 10px;
 }
 
 html body #s3 #projects-cont .proj:nth-of-type(n) {

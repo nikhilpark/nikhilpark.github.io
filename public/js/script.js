@@ -7,7 +7,6 @@ const s1 = document.querySelector("#s1");
 const s2 = document.querySelector("#s2");
 const s3 = document.querySelector("#s3");
 const red = document.querySelector("#red");
-console.log(skillsarrow);
   
 navburg.addEventListener("click", () => {
   navOverlay.style.maxHeight = "200vh";

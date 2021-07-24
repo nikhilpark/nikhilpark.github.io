@@ -91,16 +91,7 @@ html {
         margin: 0 2vw;
         font-weight: lighter;
       }
-      #skillsarrow{
-        font-size: 1.2rem;
-        margin-left: 2rem;
-        display: inline-block;
-        &:hover{
-          cursor: pointer;
-          transform: scale(1.2);
-        }
-       
-      }
+   
     }
 
     #s1 {
@@ -210,7 +201,7 @@ html {
           padding:0.4rem 0.8rem;
           &:hover{
             border-color:$redColor;
-           transition:0.4s ease-in;
+           transition:0.2s ease-in;
     
             cursor: pointer;
           }
@@ -247,7 +238,7 @@ html {
 
         .proj {
           opacity: (0.9);
-
+          border-radius: 10px;
           &:nth-of-type(n) {
             background: linear-gradient(
               90deg,
